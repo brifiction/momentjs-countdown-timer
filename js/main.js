@@ -40,11 +40,34 @@ function setupCountdown() {
   // );
 }
 
+// trigger countdown timer (per second = 1000)
 function triggerCountdown() {
   setInterval(function() {
     setupCountdown();
   }, 1000);
 }
 
-// console.log(endDate);
-triggerCountdown();
+$(document).ready(function(){
+  // console.log(endDate);
+  triggerCountdown();
+});
+
+/* 
+ * checking the loading state of document
+ * https://developer.mozilla.org/en-US/docs/Web/API/Document/readyState
+ * 
+ * 
+*/
+// if (document.readyState === "complete") {
+//   // console.log(endDate);
+//   triggerCountdown();
+//   console.log("if you see me, my work here is done..");
+// } else {
+//   if (window.addEventListener) {
+//     window.addEventListener("load", triggerCountdown(), false);
+//     console.log("loaded..");
+//   } else {
+//     window.attachEvent("onload", triggerCountdown());
+//     console.log("onload..");
+//   }
+// }
