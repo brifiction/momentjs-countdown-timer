@@ -18,7 +18,6 @@ some npm packages are not in use yet, hence uninstall from package.json if not n
 
 Run `git clone https://github.com/brifiction/momentjs-countdown-timer.git` <br>
 Run `yarn install` or `npm install` <br>
-Run `yarn start` or `npm start` to have all bundled in the `dist` folder. <br>
-Run `yarn build` or `npm build` to have all bundled and minified in the `build` folder. <br>
+Run `yarn build` or `npm build` to have all bundled and minified in the `dist` folder. <br>
 
 
