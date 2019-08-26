@@ -11,10 +11,13 @@
   "author": "brian ng",
   "license": "MIT",
   "devDependencies": {
-    "parcel-bundler": "1.12.3"
+    "parcel-bundler": "1.12.3",
+    "sass": "^1.22.10"
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "normalize.css": "^8.0.1",
+    "postcss-import": "^12.0.1"
   }
 }
