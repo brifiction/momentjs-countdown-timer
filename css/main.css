@@ -11,38 +11,40 @@ body {
   font-weight: 100;
 }
 
-div {
+#timer {
   display: inline-block;
   line-height: 1;
   padding: 20px;
   font-size: 40px;
 }
 
-span {
+#days {
+padding-right: 30px;
+  display: inline-block;
+  font-size: 100px;
+  color: #fff;
+}
+#hours {
+padding-right: 30px;
+  display: inline-block;
+  font-size: 100px;
+  color: #fff;
+}
+#minutes {
+padding-right: 30px;
+display: inline-block;
+  font-size: 100px;
+  color: #fff;
+}
+#seconds {
+padding-right: 30px;
+display: inline-block;
+  font-size: 100px;
+  color: #fff;
+}
+
+#days > span, #hours > span, #minutes > span, #seconds > span {
   display: block;
   font-size: 20px;
   color: white;
-}
-
-#timer {
-  margin: 20px;
-  background: transparent;
-  border: 1px solid #cecece;
-}
-
-#days {
-  font-size: 100px;
-  color: #db4844;
-}
-#hours {
-  font-size: 100px;
-  color: #f07c22;
-}
-#minutes {
-  font-size: 100px;
-  color: #f6da74;
-}
-#seconds {
-  font-size: 50px;
-  color: #abcd58;
 }
