@@ -2,20 +2,19 @@
   "name": "jquery-countdown-timer",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "brian ng",
+  "license": "MIT",
   "devDependencies": {
     "parcel-bundler": "^1.12.3"
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "jquery-ui-dist": "^1.12.1",
     "moment": "^2.24.0"
   }
 }
