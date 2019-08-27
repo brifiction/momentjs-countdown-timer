@@ -47,6 +47,7 @@ function setupCountdown() {
 
 // trigger countdown timer (per second = 1000)
 function triggerCountdown() {
+  // per second tick
   setInterval(function() {
     setupCountdown();
   }, 1000);
