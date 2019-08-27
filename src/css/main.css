@@ -20,6 +20,12 @@ body {
   font-size: 100px;
   color: #fff;
 }
+#timer-weeks {
+  padding-right: 30px;
+  display: inline-block;
+  font-size: 100px;
+  color: #fff;
+}
 #timer-days {
   padding-right: 30px;
   display: inline-block;
@@ -46,6 +52,7 @@ body {
 }
 
 #timer-months > span,
+#timer-weeks > span,
 #timer-days > span,
 #timer-hours > span,
 #timer-minutes > span,

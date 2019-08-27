@@ -3,9 +3,10 @@ var moment = require("moment");
 
 class Countdown {
 
-    constructor(endDate, timerMonths, timerDays, timerHours, timerMinutes, timerSeconds) {
+    constructor(endDate, timerDays, timerHours, timerMinutes, timerSeconds) {
         this.endDate = endDate;
-        this.timerMonths = timerMonths;
+        // this.timerMonths = timerMonths;
+        // this.timerWeeks = timerWeeks;
         this.timerDays = timerDays;
         this.timerHours = timerHours;
         this.timerMinutes = timerMinutes;
@@ -13,21 +14,21 @@ class Countdown {
     }
 
     setupCountdown() {
-        let eventTime = moment(this.endDate, "DD-MM-YYYY hh:mm:ss Z");
-        let currentTime = moment();
-        let diffTime = eventTime.diff(currentTime);
-        let duration = moment.duration(diffTime);
+        const eventTime = moment(this.endDate, "DD-MM-YYYY hh:mm:ss Z");
+        const currentTime = moment();
+        const diffTime = eventTime.diff(currentTime);
+        const duration = moment.duration(diffTime);
 
-        if(duration.months() !== 0) {
-            $(this.timerMonths).html(duration.months() + "<span>Months</span>");
-        }
-        if(duration.days() !== 0) {
-            $(this.timerDays).html(duration.days() + "<span>Days</span>");
-        }
+        const days = eventTime.diff(currentTime, 'days'); // = duration.asDays().toFixed(0)
+
+        // $(this.timerMonths).html(duration.asMonths().toFixed(0) + "<span>Months</span>");
+        // $(this.timerWeeks).html(duration.weeks() + "<span>Days</span>");
+
+        $(this.timerDays).html(duration.asDays().toFixed(0) + "<span>Days</span>");
         $(this.timerHours).html(duration.hours() + "<span>Hours</span>");
         $(this.timerMinutes).html(duration.minutes() + "<span>Minutes</span>");
         $(this.timerSeconds).html(duration.seconds() + "<span>Seconds</span>");
-        
+
         // console.log(currentTime);
         // console.log(
         //     duration.days() +

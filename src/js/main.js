@@ -17,7 +17,8 @@ import { Countdown } from './components/countdown.js';
 $(document).ready(function() {
   var endtime = document.getElementById('timer-endtime').value;
   // console.log(endtime);
-  let countdown = new Countdown(endtime, "#timer-months", "#timer-days", "#timer-hours", "#timer-minutes", "#timer-seconds");
+  // let countdown = new Countdown(endtime, "#timer-months", "#timer-weeks", "#timer-days", "#timer-hours", "#timer-minutes", "#timer-seconds");
+  let countdown = new Countdown(endtime, "#timer-days", "#timer-hours", "#timer-minutes", "#timer-seconds");
   countdown.triggerCountdown();
 });
 
