@@ -1,5 +1,5 @@
 {
-  "name": "jquery-countdown-timer",
+  "name": "momentjs-countdown-timer",
   "version": "1.0.1",
   "description": "A simple countdown timer, using moment with jquery and the parcel-bundler.",
   "main": "main.js",
