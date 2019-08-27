@@ -14,7 +14,7 @@ This script will compile all defined assets into the `dist` folder, then runs de
 
 ## installation and build
 
-some npm packages are not in use yet, hence uninstall from package.json if not needed.
+Some npm packages are not in use yet, hence uninstall from package.json if not needed.
 
 Run `git clone https://github.com/brifiction/momentjs-countdown-timer.git` <br>
 Run `yarn install` or `npm install` <br>
@@ -22,6 +22,7 @@ Run `yarn build` or `npm build` to have all bundled and minified in the `dist` f
 
 ## optional
 
-as specified in the `.gitignore` file, `dist` folder was added. also, remove `renovate.json` if not needed.
+1. As specified in the `.gitignore` file, `dist` folder is ignored. Comment / remove if needed. 
+1. Please remove `renovate.json` file if not needed.
 
 
