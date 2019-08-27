@@ -56,8 +56,10 @@ function triggerCountdown() {
 }
 
 $(document).ready(function() {
-  // console.log(endDate);
-  triggerCountdown();
+  var endtime = document.getElementById('timer-endtime').value;
+  // console.log(endtime);
+  let countdown = new Countdown(endtime, "#timer-months", "#timer-days", "#timer-hours", "#timer-minutes", "#timer-seconds");
+  countdown.triggerCountdown();
 });
 
 /*
