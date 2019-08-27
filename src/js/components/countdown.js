@@ -18,11 +18,16 @@ class Countdown {
         let diffTime = eventTime.diff(currentTime);
         let duration = moment.duration(diffTime);
 
-        $(this.timerMonths).html(duration.months() + "<span>Months</span>");
-        $(this.timerDays).html(duration.days() + "<span>Days</span>");
+        if(duration.months() !== 0) {
+            $(this.timerMonths).html(duration.months() + "<span>Months</span>");
+        }
+        if(duration.days() !== 0) {
+            $(this.timerDays).html(duration.days() + "<span>Days</span>");
+        }
         $(this.timerHours).html(duration.hours() + "<span>Hours</span>");
         $(this.timerMinutes).html(duration.minutes() + "<span>Minutes</span>");
         $(this.timerSeconds).html(duration.seconds() + "<span>Seconds</span>");
+        
         // console.log(currentTime);
         // console.log(
         //     duration.days() +
