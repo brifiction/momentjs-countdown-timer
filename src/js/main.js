@@ -16,23 +16,25 @@ window.$ = window.jQuery = jquery;
 var moment = require("moment");
 
 // global variables
-const endDate = "6 September 2019 00:00:00 +1000";
-const timerDays = "#timer-days";
-const timerHours = "#timer-hours";
-const timerMinutes = "#timer-minutes";
-const timerSeconds = "#timer-seconds";
+const vars = {
+  endDate: "6 September 2019 00:00:00 +1000",
+  timerDays: "#timer-days",
+  timerHours: "#timer-hours",
+  timerMinutes: "#timer-minutes",
+  timerSeconds: "#timer-seconds"
+};
 
 // setup countdown timer
 function setupCountdown() {
-  let eventTime = moment(endDate, "DD MMMM YYYY hh:mm:ss Z");
+  let eventTime = moment(vars.endDate, "DD MMMM YYYY hh:mm:ss Z");
   let currentTime = moment();
   let diffTime = eventTime - currentTime;
   let duration = moment.duration(diffTime);
 
-  $(timerDays).html(duration.days() + "<span>Days</span>");
-  $(timerHours).html(duration.hours() + "<span>Hours</span>");
-  $(timerMinutes).html(duration.minutes() + "<span>Minutes</span>");
-  $(timerSeconds).html(duration.seconds() + "<span>Seconds</span>");
+  $(vars.timerDays).html(duration.days() + "<span>Days</span>");
+  $(vars.timerHours).html(duration.hours() + "<span>Hours</span>");
+  $(vars.timerMinutes).html(duration.minutes() + "<span>Minutes</span>");
+  $(vars.timerSeconds).html(duration.seconds() + "<span>Seconds</span>");
 
   // console.log(
   //   duration.days() +
